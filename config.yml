@@ -1,0 +1,18 @@
+api_url: "http://localhost:11434"
+timeout: 50
+retry_count: 1
+retry_wait_time: 10
+retry_max_wait_time: 20
+model: "llama3.2"
+content_type_name: "Content-Type"
+content_type: "application/json"
+api_endpoint: "/api/generate"
+
+messages:
+  model_empty: "El campo 'model' no puede estar vacío"
+  prompt_empty: "El campo 'prompt' no puede estar vacío"
+  request_error: "Error al realizar la solicitud HTTP"
+  response_error: "Error al deserializar la respuesta de la API"
+  read_config_error: "Error al leer el archivo de configuración"
+  parse_config_error: "Error al parsear el archivo YAML"
+  status_code_error: "Error en la respuesta, código de estado"
