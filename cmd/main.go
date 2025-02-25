@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	config, err := gollama.LoadConfig("config.yaml")
+	config, err := gollama.LoadConfig("config.yml")
 	if err != nil {
 		log.Fatalf("Error en carga de configuración: %v", err)
 	}

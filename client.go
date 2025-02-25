@@ -17,7 +17,7 @@ type Config struct {
 	RetryMaxWaitTime   	int    			`yaml:"retry_max_wait_time"`
 	ContentType    		string 			`yaml:"content_type"`
 	ContentTypeName		string 			`yaml:"content_type_name"`
-	APIEndpoint		string 			`yaml:"api_endpoint"`
+	APIEndpoint			string 			`yaml:"api_endpoint"`
 	Model              	string 			`yaml:"model"`
 	Messages           	MessagesConfig 	`yaml:"messages"`
 }
@@ -36,14 +36,14 @@ type Request struct {
 	Model   	string                 	`json:"model"`
 	Prompt  	string                 	`json:"prompt"`
 	Stream  	bool                   	`json:"stream"`
-	Format		string			`json:"format"`
-	KeepAlive	int			`json:"keep_alive"`
+	Format		string					`json:"format"`
+	KeepAlive	int						`json:"keep_alive"`
 	Options map[string]interface{} 		`json:"options,omitempty"`
 }
 
 type Response struct {
-	Model               string    	`json:"model"`
-	CreatedAt           time.Time 	`json:"created_at"`
+	Model               string    `json:"model"`
+	CreatedAt           time.Time `json:"created_at"`
 	Response           	string    `json:"response"`
 	Done               	bool      `json:"done"`
 	Context            	[]int     `json:"context"`
