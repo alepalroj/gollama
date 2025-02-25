@@ -32,10 +32,12 @@ type MessagesConfig struct {
 }
 
 type Request struct {
-	Model   string                 `json:"model"`
-	Prompt  string                 `json:"prompt"`
-	Stream  bool                   `json:"stream"`
-	Options map[string]interface{} `json:"options,omitempty"`
+	Model   	string                 	`json:"model"`
+	Prompt  	string                 	`json:"prompt"`
+	Stream  	bool                   	`json:"stream"`
+	Format		string					`json:"format"`
+	KeepAlive	int						`json:"keep_alive"`
+	Options map[string]interface{} 		`json:"options,omitempty"`
 }
 
 type Response struct {
