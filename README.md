@@ -1,5 +1,4 @@
 # Gollama: Cliente Go para Ollama
-## No Probado !! - inicial
 
 **Gollama** es un cliente de Go diseñado para interactuar con el servicio Ollama, proporcionando acceso a modelos de lenguaje de gran tamaño (LLM) como **Llama 3.2**. El cliente permite enviar preguntas a modelos LLM y recibir respuestas generadas a través de la API de Ollama, todo configurado de manera flexible a través de un archivo `config.yaml`.
 
