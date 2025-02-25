@@ -16,6 +16,7 @@ type Config struct {
 	RetryWaitTime      	int    			`yaml:"retry_wait_time"`
 	RetryMaxWaitTime   	int    			`yaml:"retry_max_wait_time"`
 	ContentType    		string 			`yaml:"content_type"`
+	ContentTypeName		string 			`yaml:"content_type_name"`
 	APIEndpoint			string 			`yaml:"api_endpoint"`
 	Model              	string 			`yaml:"model"`
 	Messages           	MessagesConfig 	`yaml:"messages"`
